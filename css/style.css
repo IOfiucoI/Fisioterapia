@@ -1,0 +1,116 @@
+:root{
+    --primario: #0d0269;
+    --segundario: #202020;
+}
+.logo{
+    width: 250px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    .logo{
+        width: 350px;
+    }
+}
+/* .navbar-light{
+    background-color: transparent !important;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #fff;
+} */
+
+body{
+    color:var(--segundario);
+    font-family:Montserrat,sans-serif
+}
+h1,h2,h3,h4,h5{
+    color: var(--primario);
+}
+
+a{
+    color:var(--segundario);
+    font-weight: 700;
+}
+
+.btn:focus,.form-control:focus{
+    box-shadow:none
+}
+
+.btn{
+    padding:12px 25px;
+    font-size:14px;
+    font-weight:600;
+    letter-spacing:1px;
+    color:#fff;
+    background:var(--primario);
+    border:2px solid transparent;
+    border-radius:0;
+    box-shadow:inset 0 0 0 50px var(--primario);
+    transition:ease-out .3s;
+}
+.btn:hover{
+    color:var(--primario);
+    background:0 0;
+    box-shadow:inset 0 0 0 0 var(--primario);
+    border-color:var(--primario);
+}
+
+.header_bg{
+
+    background:linear-gradient(rgba(9,1,82,.9),rgba(9,115,214,.9)),url('../img/hero-bg.jpg');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover
+}
+.centrado{
+    align-items: center;
+}
+
+.header__titulo{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 50px 0;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .header__titulo{
+        font-size: 40px;
+        padding: 0 0 0 20px;
+        text-align: left;
+        border-left: 1px solid;
+    }
+  
+}
+
+.titulo h2{
+    margin-top: 30px;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.titulo p{
+    display: inline-block;
+    /* margin: 0 30px; */
+    margin-bottom: 0px;
+    padding: 15px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background: #fff;
+}
+
+.titulo p::before{
+    position: absolute;
+    content: "";
+    height: 3px;
+    top: 11px;
+    right: -30px;
+    left: -30px;
+    background: #190474;
+    z-index: -1;
+}
