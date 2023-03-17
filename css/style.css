@@ -2,6 +2,8 @@
     --fuentePrincipal: 'Montserrat', sans-serif;
     --primario: #0d0269;
     --secundario: #494949;
+    --terciario: #aeaeae9d;
+    --blanco: #fff;
 }
 
 .logo {
@@ -33,6 +35,15 @@ h1, h2, h3, h4, h5 {
     color: var(--primario);
 }
 
+.navbar-nav {
+    text-align: center;
+
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: var(--blanco);
+}
+
 .navbar-light .navbar-nav .nav-link {
 
     color: var(--secundario);
@@ -49,7 +60,7 @@ h1, h2, h3, h4, h5 {
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #fff;
+    color: var(--blanco);
     background: var(--primario);
     border: 2px solid transparent;
     border-radius: 0;
@@ -77,7 +88,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .header__titulo {
-    color: #fff;
+    color: var(--blanco);
     font-size: 30px;
     font-weight: 700;
     padding: 50px 0;
@@ -102,7 +113,6 @@ h1, h2, h3, h4, h5 {
 
 .titulo p {
     display: inline-block;
-    /* margin: 0 30px; */
     margin-bottom: 0px;
     padding: 15px;
     position: relative;
@@ -110,7 +120,8 @@ h1, h2, h3, h4, h5 {
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: #fff;
+    background: var(--blanco);
+    word-wrap: break-word;
 }
 
 .titulo p::before {
@@ -120,6 +131,57 @@ h1, h2, h3, h4, h5 {
     top: 26px;
     right: -30px;
     left: -30px;
-    background: #190474;
+    background: var(--primario);
     z-index: -1;
+}
+
+.servicios{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    word-wrap: break-word;
+
+}
+
+/* .servicios p{
+    padding-right: .5rem;
+} */
+
+.servicios:hover{
+    color: var(--blanco);
+    background-color: var(--terciario);
+    border-radius: 80px;
+}
+
+.servicios img{
+    border-radius: 50%;
+    margin-right: 1rem;
+    border: 4px solid var(--terciario);
+}
+
+
+.whatsapp{
+        color: var(--blanco);
+        border-radius: 50%;
+        background-color: #07a50f;
+        padding: 15px 15px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        transition: all 300ms ease 0ms;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        z-index: 99;
+
+}
+
+.whatsapp:hover{
+    color:var(--blanco);
+	box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+	transform: translateY(-7px);
+}
+
+.whatsapp a{
+    color: var(--blanco);
 }
