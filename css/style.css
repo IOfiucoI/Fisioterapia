@@ -75,6 +75,10 @@ h1, h2, h3, h4, h5 {
     border-color: var(--primario);
 }
 
+.mb {
+    margin-bottom: 60px;
+}
+
 .header_bg {
 
     background: linear-gradient(rgba(9, 1, 82, .9), rgba(9, 115, 214, .9)), url('../img/hero-bg.jpg');
@@ -106,7 +110,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .header__imagen {
-    background-image: url('/img/cuerpo.png');
+    background-image: url('../img/cuerpo.png');
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -129,10 +133,24 @@ h1, h2, h3, h4, h5 {
     }
 }
 
+
+
 .titulo h2 {
     margin-top: 30px;
-    font-size: 45px;
+    font-size: 2.5rem;
     font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .titulo h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .titulo h2 {
+        font-size: 3.5rem;
+    }
 }
 
 .titulo p {
@@ -140,20 +158,16 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 0px;
     padding: 15px;
     position: relative;
-    font-size: 16px;
+    font-size: 1.5rem;
     font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    
-    word-wrap: break-word;
-    padding-bottom: 4rem;
+    padding-bottom: 40px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     .titulo p {
         background-color: var(--blanco);
     }
-  
+
 }
 
 .titulo p::before {
@@ -168,9 +182,9 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (min-width: 768px) {
-
     .titulo p::before {
-        top: 26px;
+        bottom: unset;
+        top: 33px;
         right: -30px;
         left: -30px;
     }
@@ -179,16 +193,10 @@ h1, h2, h3, h4, h5 {
 .servicios {
     display: flex;
     align-items: center;
-    margin: 1rem;
+    margin: 10px 0;
     font-size: 1.5rem;
-    font-weight: 700;
-    word-wrap: break-word;
-
+    font-weight: bold;
 }
-
-/* .servicios p{
-    padding-right: .5rem;
-} */
 
 @media (min-width: 768px) {
     .servicios {
@@ -210,6 +218,53 @@ h1, h2, h3, h4, h5 {
 }
 
 
+.tratamientos {
+    background-color: var(--primario);
+}
+
+.tratamientos__titulo h2 {
+    margin: 30px 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--blanco);
+    text-align: center;
+    padding-top: 40px;
+}
+
+@media (min-width: 768px){
+    .tratamientos__titulo h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .tratamientos__titulo h2 {
+        font-size: 3.5rem;
+    }
+}
+
+.tratamientos__opcion img{
+    display: block;
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--terciario);
+    margin: 0 auto;
+
+}
+
+@media (min-width: 768px){
+    .tratamientos__opcion img{
+        width: 200px;
+    } 
+}
+
+.tratamientos__opcion p{
+    color: var(--blanco);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+
+}
 
 .whatsapp {
     color: var(--blanco);
@@ -223,11 +278,6 @@ h1, h2, h3, h4, h5 {
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     z-index: 99;
 
-}
-
-.tratamientos{
-    background-color: var(--primario);
-    color: var(--blanco);
 }
 
 .whatsapp:hover {
